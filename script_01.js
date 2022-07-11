@@ -13,4 +13,15 @@ function test()
     console.log("Hallo Robert!");
 }
 
+/***** Funktionen 02a *****/
+// 2a. Parametrisierung + Datenübergabe von INNEN
+
+ausgabeNamen();
+
+function ausgabeNamen() {
+    let firstName = "Anna"; // what happens in Vegas, ...
+    console.log("Hallo " + firstName + "!");
+}
+
+// console.log(firstName); // Fehler: Scope!
 
