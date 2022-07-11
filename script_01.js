@@ -16,12 +16,22 @@ function test()
 /***** Funktionen 02a *****/
 // 2a. Parametrisierung + Datenübergabe von INNEN
 
-ausgabeNamen();
+// ausgabeNamen();
+// console.log(firstName); // Fehler: Scope!
 
 function ausgabeNamen() {
     let firstName = "Anna"; // what happens in Vegas, ...
     console.log("Hallo " + firstName + "!");
 }
 
-// console.log(firstName); // Fehler: Scope!
 
+/***** Funktionen 02b *****/
+// 2b. Parametrisierung + Datenübergabe von AUSSEN
+
+ausgabeNamenParam("Anna"); // Argument 
+ausgabeNamenParam("Craig");
+ausgabeNamenParam("Fatih");
+
+function ausgabeNamenParam(firstName) { // Parameter
+    console.log("Hallo " + firstName + "!");
+}
