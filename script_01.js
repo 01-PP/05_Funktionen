@@ -28,10 +28,20 @@ function ausgabeNamen() {
 /***** Funktionen 02b *****/
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
-ausgabeNamenParam("Anna"); // Argument 
-ausgabeNamenParam("Craig");
-ausgabeNamenParam("Fatih");
+// ausgabeNamenParam("Anna"); // Argument 
+// ausgabeNamenParam("Craig");
+// ausgabeNamenParam("Fatih");
 
 function ausgabeNamenParam(firstName) { // Parameter
     console.log("Hallo " + firstName + "!");
+}
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter
+
+ausgabeNamenParams("Maxine","Mütze");
+ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname?"));
+
+function ausgabeNamenParams(firstName, familyName) { // Parameter
+    console.log("Hallo " + firstName + " " + familyName + "!");
 }
